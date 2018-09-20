@@ -20,9 +20,10 @@
 
 ## Authors
 
-   Author: D.Dang
-           Texas Instruments, Inc
+   Author: D.Dang  
+           Texas Instruments, Inc  
            December 2010  
+           
    Editor: Kieran O'Connor  
    Last Editted: 9/19/2018
 
