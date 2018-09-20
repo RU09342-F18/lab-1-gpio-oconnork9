@@ -1,4 +1,4 @@
-# Lab 1:Button Blink
+# Lab 1: Button Blink
 
 ## Summary
  The two codes that were developed were created for the MSP430G2553 and the MSP430FR2311. They toggled an LED designated depending on each board every 50000 times they program went through the loop.
