@@ -1,7 +1,12 @@
 # Lab 1 GPIO Button Blink
 
 ## Summary
- The two codes that were developed were created for the MSP430G2553 and the MSP430FR2311. Each program blinks an LED at a  1 MHz or around  seconds. 
+ The two codes that were developed were created for the MSP430G2553 and the MSP430FR2311. They toggled an LED designated depending on each board every 50000 times they program went through the loop.
+
+## Inputs and Outputs
+
+### MSP430G2553
+ This board's code turn on and off P1.6
 
 # Button Blink
 Now that you have looked at blinking the LED from some built in delay, but what if we wanted to control the state of the LED by a button? You may think "Why would I need a Microcontroller to perform the job of a switch?". And that is where you come in. The bare minimum for this part of the lab is to essentially replicate a switch with your development board.
