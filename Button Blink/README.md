@@ -3,13 +3,28 @@
 ## Summary
  The two codes that were developed were created for the MSP430G2553 and the MSP430FR2311. They toggled an LED designated depending on each board every 50000 times they program went through the loop.
 
+## General Functionality
+ The two main.c files toggle the LED on each of the boards using a dowhile loop which counts to 50000 to turn the determined LED on or OFF.
 ## Inputs and Outputs
 
 ### MSP430G2553
- 
+ INPUTS: Not used in this program
+ OUTPUTS: P1.6-LED
  
 ### MSP430FR2311
+ INPUTS: Not used in this program
+ OUTPUTS: P1.0-LED
  
+## References
+   TI Resource Center (http://dev.ti.com/tirex/#/Device/MSP430F5529/?link=Device%20Documentation%2FMSP430F5529)
+
+## Authors
+
+   Author: D.Dang
+           Texas Instruments, Inc
+           December 2010
+   Editor: Kieran O'Connor
+   Last Editted: 9/19/2018
 
 # Button Blink
 Now that you have looked at blinking the LED from some built in delay, but what if we wanted to control the state of the LED by a button? You may think "Why would I need a Microcontroller to perform the job of a switch?". And that is where you come in. The bare minimum for this part of the lab is to essentially replicate a switch with your development board.
