@@ -1,4 +1,4 @@
-# Lab 1 GPIO Button Blink
+# Lab 1:Button Blink
 
 ## Summary
  The two codes that were developed were created for the MSP430G2553 and the MSP430FR2311. They toggled an LED designated depending on each board every 50000 times they program went through the loop.
@@ -8,11 +8,11 @@
 ## Inputs and Outputs
 
 ### MSP430G2553
- INPUTS: Not used in this program
+ INPUTS: Not used in this program  
  OUTPUTS: P1.6-LED
  
 ### MSP430FR2311
- INPUTS: Not used in this program
+ INPUTS: Not used in this program  
  OUTPUTS: P1.0-LED
  
 ## References
@@ -22,8 +22,8 @@
 
    Author: D.Dang
            Texas Instruments, Inc
-           December 2010
-   Editor: Kieran O'Connor
+           December 2010  
+   Editor: Kieran O'Connor  
    Last Editted: 9/19/2018
 
 # Button Blink
