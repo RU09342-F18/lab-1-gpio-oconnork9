@@ -1,3 +1,31 @@
+# Lab 1: OFF Board Button Blink
+
+## Summary
+ The two codes that were developed were created for the MSP430G2553 and the MSP430FR2311. They toggled an LED designated depending on each board every 50000 times they program went through the loop.
+
+## General Functionality
+ The two main.c files toggle the LED on each of the boards using a dowhile loop which counts to 50000 to turn the determined LED on or OFF.
+## Inputs and Outputs
+
+### MSP430G2553
+ INPUTS: Not used in this program  
+ OUTPUTS: P1.6-LED
+ 
+### MSP430FR2311
+ INPUTS: Not used in this program  
+ OUTPUTS: P1.0-LED
+ 
+## References
+   TI Resource Center (http://dev.ti.com/tirex/#/Device/MSP430F5529/?link=Device%20Documentation%2FMSP430F5529)
+
+## Authors
+
+   Author: D.Dang  
+           Texas Instruments, Inc  
+           December 2010  
+           
+   Editor: Kieran O'Connor  
+   Last Editted: 9/19/2018
 # Off Board Blink
 Now that we have the whole blinking LED out of the way, why don't we try making things a little more convenient by taking the G2553 off the development board and into a breadboard. In addition to the software, your README needs to also contain a picture of your circuit with at least 2 LEDs blinking all on a breadboard and without a development board. This means that you will need:
 * Proper power being supplied to the processor
