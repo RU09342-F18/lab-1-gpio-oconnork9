@@ -1,7 +1,7 @@
 # Lab 1: Button Blink
 
 ## Summary
- The two codes that were developed were created for the MSP430G2553 and the MSP430FR2311. They toggled an LED designated depending on each board every 50000 times they program went through the loop.
+ The 
 
 ## General Functionality
  The two main.c files toggle the LED on each of the boards using a dowhile loop which counts to 50000 to turn the determined LED on or OFF.
@@ -20,11 +20,7 @@
 
 ## Authors
 
-   Author: D.Dang  
-           Texas Instruments, Inc  
-           December 2010  
-           
-   Editor: Kieran O'Connor  
+   Author: Kieran O'Connor  
    Last Editted: 9/19/2018
 
 # Button Blink
