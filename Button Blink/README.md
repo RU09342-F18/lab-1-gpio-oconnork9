@@ -1,23 +1,21 @@
 # Lab 1: Button Blink
 
 ## Summary
- The 
+ There are two programs made for two different boards the MSP430F5529 and the MSP430FR2311. Each of the programs use a button located on the Lauchpad designated by a pin to turn of the lit LED on the given board.
 
 ## General Functionality
- The two main.c files toggle the LED on each of the boards using a dowhile loop which counts to 50000 to turn the determined LED on or OFF.
+ The two programs included  use a basic button to turn off an LED as you hold it. This is done with a if statement checking if the button is pressed when it is pressed the if statement is true and shuts off the light.
+ 
 ## Inputs and Outputs
 
-### MSP430G2553
- INPUTS: Not used in this program  
- OUTPUTS: P1.6-LED
+### MSP430F5529
+ INPUTS: P2.1-Tactile Button
+ OUTPUTS: P4.7-Green LED
  
 ### MSP430FR2311
- INPUTS: Not used in this program  
- OUTPUTS: P1.0-LED
+ INPUTS: P1.1-Button  
+ OUTPUTS: P1.0-Red LED
  
-## References
-   TI Resource Center (http://dev.ti.com/tirex/#/Device/MSP430F5529/?link=Device%20Documentation%2FMSP430F5529)
-
 ## Authors
 
    Author: Kieran O'Connor  
