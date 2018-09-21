@@ -1,3 +1,10 @@
+# Lab 1: Multiple Blink
+
+## Summary
+  This section consisted of two programs for two different boards 
+
+
+
 # Multiple Blink
 Now that we have blinked at least 1 LED, what about blinking multiple LEDS at the same time? The minimum that you need to develop is blinking at least two LEDs at two different rates. Although I am not going to give you a speed, you should probably pick a rate which is visible to a standard human. I really hope that you take this further and perform some of the extra work for this part of the lab exercise.
 
