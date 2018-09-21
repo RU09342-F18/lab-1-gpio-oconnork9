@@ -1,3 +1,32 @@
+# Lab 1: Simple Blink
+
+## Summary
+ The two codes that were developed were created for the MSP430G2553 and the MSP430FR2311. They toggled an LED designated depending on each board every 50000 times they program went through the loop.
+
+## General Functionality
+ The two main.c files toggle the LED on each of the boards using a dowhile loop which counts to 50000 to turn the determined LED on or OFF.
+## Inputs and Outputs
+
+### MSP430G2553
+ INPUTS: Not used in this program  
+ OUTPUTS: P1.6-LED
+ 
+### MSP430FR2311
+ INPUTS: Not used in this program  
+ OUTPUTS: P1.0-LED
+ 
+## References
+   TI Resource Center (http://dev.ti.com/tirex/#/Device/MSP430F5529/?link=Device%20Documentation%2FMSP430F5529)
+
+## Authors
+
+   Author: D.Dang  
+           Texas Instruments, Inc  
+           December 2010  
+           
+   Editor: Kieran O'Connor  
+   Last Editted: 9/19/2018
+
 # Simple Blink
 For starters, you will need to blink one of the on-board LED's at a particular rate. It is up to you to determine what rate you want to blink it at, however it has to be symmetrical (50% Duty Cycle), meaning equal times on and off. You should attempt multiple different speeds before moving on to the next part of the lab.
 
