@@ -1,31 +1,22 @@
 # Lab 1: OFF Board Button Blink
 
 ## Summary
- The two codes that were developed were created for the MSP430G2553 and the MSP430FR2311. They toggled an LED designated depending on each board every 50000 times they program went through the loop.
+ The program developed programmed on the the MSP430G2553 on a Launchpad Board but taken off for testing purposes. The microcontroller was programmed to toggle one LED after a delay and another every five times the first LED was toggled.
 
 ## General Functionality
- The two main.c files toggle the LED on each of the boards using a dowhile loop which counts to 50000 to turn the determined LED on or OFF.
+ The MSP430G2553 was programmed then placed on a bread board. The microcontroller was programmed using "__delay_cycles" to delay the blinks of the LEDs and used an if statement to toggle the other button after the other button was toggled five times. The resistors connected to the LEDs were each 10 kiloohms there was also a circuit created for the reset which include a 47 kiloohm resistor connected to ground and a 1 nF Capacitor connected to 3.3V Voltage Source with a push button connected to ground.
+ 
 ## Inputs and Outputs
 
-### MSP430G2553
- INPUTS: Not used in this program  
- OUTPUTS: P1.6-LED
- 
-### MSP430FR2311
- INPUTS: Not used in this program  
- OUTPUTS: P1.0-LED
- 
-## References
-   TI Resource Center (http://dev.ti.com/tirex/#/Device/MSP430F5529/?link=Device%20Documentation%2FMSP430F5529)
+### MSP430G2553 Microcontroller on Bread Board
+ INPUTS: Reset-Button  
+ OUTPUTS: P1.6-Red LED, P1.0- RED LED
 
 ## Authors
 
-   Author: D.Dang  
-           Texas Instruments, Inc  
-           December 2010  
-           
    Editor: Kieran O'Connor  
    Last Editted: 9/19/2018
+   
 # Off Board Blink
 Now that we have the whole blinking LED out of the way, why don't we try making things a little more convenient by taking the G2553 off the development board and into a breadboard. In addition to the software, your README needs to also contain a picture of your circuit with at least 2 LEDs blinking all on a breadboard and without a development board. This means that you will need:
 * Proper power being supplied to the processor
