@@ -1,8 +1,28 @@
 # Lab 1: Multiple Blink
 
 ## Summary
-  This section consisted of two programs for two different boards 
+  This section consists of two programs for two different boards the MSP430F5529 and the MSP430FR2311. Each of these boards have two lights going at different speeds one of the two LEDs. One of the LEDs is toggled every five times the other is toggled.
 
+## General Functionality
+ The LEDs are toggled on the boards using a while loop and and if statement that checks every five toggles of the first LED to switch on the second LED. The "__delay_cycles" function is used to delay the LED transition.
+ 
+## Inputs and Outputs
+
+### MSP430F5529
+ INPUTS: Not used in this program  
+ OUTPUTS: P1.0-LED, P4.7-LED
+ 
+### MSP430FR2311
+ INPUTS: Not used in this program  
+ OUTPUTS: P1.0-LED, P2.0-LED
+ 
+## References
+   TI Resource Center (http://dev.ti.com/tirex/#/Device/MSP430F5529/?link=Device%20Documentation%2FMSP430F5529)
+
+## Authors
+
+   Author: Kieran O'Connor  
+   Last Editted: 9/19/2018
 
 
 # Multiple Blink
