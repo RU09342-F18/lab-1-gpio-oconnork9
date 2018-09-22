@@ -1,0 +1,29 @@
+#include <msp430.h> 
+
+
+/**
+ * main.c
+ */
+int main(void)
+{
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	
+	P2DIR &=~BIT1; //Sets P2.1 as Input
+	P2OUT |=BIT1; //Sets Resistor as Pull Up
+	P2REN |=BIT1; //Sets Resistor
+
+	P4DIR |= BIT7; //Sets P4.7 as Output
+
+	while(1){
+
+	if(P2IN & BIT1) //Checks if P2.1 is Pressed
+	{
+	    P4OUT |= BIT7; //Turns Off LED P4.7
+	}
+	else
+	{
+	    P4OUT &= ~BIT7; //Turns On LED P4.7
+	}
+	}
+	return 0;
+}
