@@ -1,0 +1,27 @@
+#include <msp430.h> 
+
+/**
+ * main.c
+ */
+int main(void)
+{
+    WDTCTL = WDTPW | WDTHOLD;
+
+    P1DIR |= 0x01;      //Sets P1.0 to Output
+    P4DIR |= BIT7;      //Sets P4.7 to Output
+
+    volatile unsigned int i;    //Counter Delay Variable
+    while (1)
+    {
+        P1OUT ^= 0x01;
+        __delay_cycles(100000); //Creates Delay for the Blinking Lights
+        if (i >= 0x05)      //Counts to 5 then Toggles P4.7
+        {
+            P4OUT ^= BIT7;  //Toggles P4.7
+
+            i = 0;          //Resets Counter
+        }
+        i++;                //Adds to Delay Counter
+    }
+    return 0;
+}
