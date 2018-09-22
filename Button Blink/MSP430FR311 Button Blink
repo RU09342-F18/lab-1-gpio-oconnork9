@@ -7,7 +7,7 @@
 int main(void)
 {
     WDTCTL = WDTPW | WDTHOLD;   // stop watchdog timer
-    PM5CTL0 &= ~LOCKLPM5;
+    PM5CTL0 &= ~LOCKLPM5; //Clears LOCKLPM5 in order to get the pins off High Impedance
 
     P1DIR &=~BIT1; //Sets P1.1 as Input
     P1OUT |=BIT1;  //Sets Resistor as pull down
