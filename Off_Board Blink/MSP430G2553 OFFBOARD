@@ -1,0 +1,26 @@
+#include <msp430.h> 
+
+
+/**
+ * main.c
+ */
+int main(void)
+{
+    WDTCTL = WDTPW | WDTHOLD;
+
+     P1DIR |= BIT6; //Sets P1.0 as Output
+     P1DIR |= 0x01; //Sets P1.0 as Output
+         volatile unsigned int i; //Delay Counter Variable
+       while (1)
+       {
+           P1OUT ^= BIT6; //Toggles P1.0
+           __delay_cycles(100000);
+           if(i>=0x05){ //Toggles P2.0 Every 5 times P1.0 is Toggled
+           P1OUT ^= 0x01; //Toggles P1.0
+
+           i=0; //Resets Counter
+           }
+           i++; //Adds 1 to Delay Counter
+       }
+	return 0;
+}
