@@ -11,7 +11,7 @@ int main(void)
     P4DIR |= BIT7;      //Sets P4.7 to Output
 
     volatile unsigned int i;    //Counter Delay Variable
-    while (1)
+    while (1) //Creates continuous loop
     {
         P1OUT ^= 0x01;
         __delay_cycles(100000); //Creates Delay for the Blinking Lights
