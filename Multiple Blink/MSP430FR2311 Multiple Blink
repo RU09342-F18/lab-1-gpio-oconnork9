@@ -12,7 +12,7 @@ int main(void)
     P1DIR |= 0x01; //Sets P1.0 as Output
     P2DIR |= 0x01; //Sets P2.0 as Output
         volatile unsigned int i; //Delay Counter Variable
-      while (1)
+      while (1) //Creates continuous loop
       {
           P1OUT ^= 0x01; //Toggles P1.0
           __delay_cycles(100000); //Delays LEDs for visable blink
