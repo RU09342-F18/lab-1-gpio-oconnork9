@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-    WDTCTL = WDTPW | WDTHOLD;
+    WDTCTL = WDTPW | WDTHOLD; // stop watchdog timer
     PM5CTL0 &= ~LOCKLPM5;
 
     P1DIR |= 0x01; //Sets P1.0 as Output
@@ -15,7 +15,7 @@ int main(void)
       while (1)
       {
           P1OUT ^= 0x01; //Toggles P1.0
-          __delay_cycles(100000);
+          __delay_cycles(100000); //Delays LEDs for visable blink
           if(i==0x05){ //Toggles P2.0 Every 5 times P1.0 is Toggled
           P2OUT ^= 0x01; //Toggles P2.0
 
