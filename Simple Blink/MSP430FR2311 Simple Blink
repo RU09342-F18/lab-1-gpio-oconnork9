@@ -74,7 +74,7 @@ int main(void)
   WDTCTL = WDTPW + WDTHOLD;                 // Stop watchdog timer
   PM5CTL0 &= ~LOCKLPM5;                     //Clears LOCKLPM5 in order to get the pins off High Impedance
   P1DIR |= 0x01;                            // Set P1.0 to output
-  for (;;)
+  for (;;) //Creates continuous loop
   {
     volatile unsigned int i;                //Delay Variable
 
